@@ -249,7 +249,6 @@ h1 {
 
     .sidebar nav {
         flex-direction: row;
-        width: auto;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 1rem;
