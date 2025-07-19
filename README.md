@@ -10,3 +10,5 @@ objetivos:
 -Editor de Ficha com sistema para adicionar e editar exercícios
 -Sidebar fixa
 -Interface adaptável para celular e desktop
+
+link de facil acesso: https://loudionbool.github.io/GYM-Web/
