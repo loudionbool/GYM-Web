@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    background-color: #111;
+    color: #ccc;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    background: #151515;
+    height: 95vh;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 2rem;
+    padding-left: 0.3rem;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
+    color: #ccc;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.sidebar nav a:hover {
+    background: #1e1e1e;
+    color: #a82c2c;
+}
+
+.sidebar nav i {
+    width: 22px;
+    height: 22px;
+}
+
+/* Perfil do usuário */
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    margin-top: auto;
+    bottom: 14px;
+}
+
+.profile i {
+    width: 36px;
+    height: 36px;
+    color: #aaa;
+    transition: 0.3s ease;
+}
+
+.profile i:hover {
+    transform: scale(1.15);
+    color: #fff;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #aaa;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card i {
+    color: #a82c2c;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card i:hover {
+    transform: scale(1.2);
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 1rem;
+        border-radius: 0;
+        overflow-x: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar .top {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .sidebar .logo {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem;
+    }
+
+    .sidebar nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .profile {
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .main {
+        padding: 1rem;
+    }
+
+    .main h1 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .card i {
+        font-size: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 1rem;
+        border-radius: 0;
+        overflow-x: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sidebar .top {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .sidebar .logo {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1rem;
+    }
+
+    .sidebar nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .profile {
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    .main {
+        padding: 1rem;
+    }
+
+    .main h1 {
+        font-size: 1.6rem;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 1.2rem;
+    }
+
+    .card i {
+        font-size: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}

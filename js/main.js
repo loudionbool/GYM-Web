@@ -1,0 +1,1 @@
+console.log("Site da academia carregado com sucesso!");

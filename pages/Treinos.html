@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout</title>
+    <link rel="stylesheet" href="../css/treinos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="top">
+                <div class="logo">
+                    <i data-lucide="bot"></i>
+                    <span>I.A GYM</span>
+                </div>
+                <nav>
+                    <a href="../index.html"><i data-lucide="house"></i> Home</a>
+                    <a href="pages/calendario.html"><i data-lucide="calendar-days"></i><span>Calendar</span></a>
+                    <a href="pages/cardapio.html"><i data-lucide="utensils-crossed"></i><span>Diet Plan</span></a>
+                    <a href="#"><i data-lucide="notebook-text"></i><span>Note</span></a>
+                    <a href="pages/editor.html"><i data-lucide="edit-3"></i><span>Editor</span></a>
+                    <a href="pages/evolucao.html"><i data-lucide="pie-chart"></i><span>Statistic</span></a>
+                    <a href="#"><i data-lucide="settings"></i><span>Settings</span></a>
+                </nav>
+            </div>
+            <div class="profile">
+                <i data-lucide="user"></i>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header>
+                <h1>Workout <i data-lucide="dumbbell"></i></h1>
+                <p>Select a day to show your workout routine.</p>
+            </header>
+
+            <section class="days">
+                <button>Monday</button>
+                <button>Tuesday</button>
+                <button>Wednesday</button>
+                <button>Thursday</button>
+                <button>Friday</button>
+                <button>Saturday</button>
+                <button>Sunday</button>
+            </section>
+
+            <section class="exercises" id="exerciseCards">
+                <p>Select a day to view exercises.</p>
+            </section>
+        </main>
+    </div>
+    <script src="../js/treinos.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
