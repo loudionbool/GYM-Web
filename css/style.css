@@ -249,7 +249,7 @@ h1 {
 
     .sidebar nav {
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         overflow-x: auto;
         gap: 1rem;
     }
@@ -260,8 +260,8 @@ h1 {
     }
 
     .profile {
-        padding-bottom: 1rem;
-        margin-top: 1rem;
+        padding-bottom: 0;
+        margin-top: 0;
     }
 
     .main {
